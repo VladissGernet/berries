@@ -160,9 +160,9 @@
 .main-header__navigation--nojs .main-header__list {
   @media (max-width: $mobile-width) {
     position: static;
-    display: block;
-    margin-left: -20px;
-    margin-top: 13px;
+    display: flex;
+    margin-left: -26px;
+    margin-top: 4px;
   }
 }
 
