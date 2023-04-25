@@ -122,15 +122,19 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  background-color: $alice-blue;
 
   @media (max-width: $mobile-width) {
     position: absolute;
-    left: 5px;
-    top: 27px;
-    width: 100%;
+    left: -26px;
+    top: 4px;
+    width: calc(100% + 52px);
     flex-direction: column;
     gap: 9px;
     z-index: 1;
+    padding-top: 23px;
+    background-image: linear-gradient(180deg, rgba(88, 13, 101, 0.25) 0, transparent 7px);
+    min-height: 338px;
   }
 
   @media (min-width: $tablet-width) {
@@ -172,7 +176,8 @@
   text-decoration: none;
   color: $black;
   display: inline-block;
-  padding: 10px;
+  padding: 10px 0 10px 40px;
+  width: calc(100% - 52px);
 
   @media (min-width: $tablet-width) {
     font-weight: 400;
