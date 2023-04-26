@@ -15,6 +15,7 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 48px;
     padding-top: 144px;
     min-height: 978px;
     background-image: $top-gradient, url("../img/hero/hero-tablet.jpg");
