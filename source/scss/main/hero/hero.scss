@@ -1,7 +1,7 @@
 .hero {
-  padding-top: 66px;
+  padding-top: 68px;
   background-color: $link-water;
-  background-image: url("../img/hero/hero-mobile.jpg");
+  background-image: $top-gradient, url("../img/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
@@ -11,13 +11,25 @@
 }
 
 .hero__title {
-  margin: 0;
+  margin: 0 0 21px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $deep-sea;
   text-align: center;
-  letter-spacing: 2pn
-  x;
+}
+
+.hero__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__item {
+  margin-left: 20px;
+}
+
+.hero__content {
+  line-height: 19px;
 }
