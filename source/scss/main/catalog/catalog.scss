@@ -16,6 +16,12 @@
     font-size: 48px;
     line-height: 53px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 93px;
+    font-size: 52px;
+    line-height: 58px;
+  }
 }
 
 .catalog__list {
@@ -30,6 +36,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 24px;
   }
 }
 

@@ -28,6 +28,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 102px;
     min-height: 797px;
     padding-top: 170px;
     background-image: $top-gradient, url("../img/hero/hero-desktop.jpg");
