@@ -15,13 +15,14 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 144px;
-    min-height: 924px;
+    min-height: 978px;
     background-image: $top-gradient, url("../img/hero/hero-tablet.jpg");
-    background-position: top, left bottom -53px;
+    background-position: top, left bottom;
+    background-size: auto, cover;
 
     @media (min-resolution: 2dppx) {
       background-image: $top-gradient, url("../img/hero/hero-tablet@2x.jpg");
-      background-size: auto, 903px 978px;
+      background-size: auto, cover;
     }
   }
 }
