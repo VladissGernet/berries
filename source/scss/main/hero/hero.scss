@@ -1,13 +1,15 @@
 .hero {
-  min-height: 572px;
+  min-height: 640px;
   padding-top: 68px;
   background-color: $link-water;
-  background-image: $top-gradient, url("../img/hero/hero-mobile.jpg");
-  background-repeat: no-repeat;
+  background-image: $top-gradient, url("../img/hero/hero-mobile.jpg"), url("../img/hero/hero-mobile-adaptive.jpg");
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: top, left bottom, right;
+  background-size: auto, auto, auto;
+  box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../img/hero/hero-mobile@2x.jpg");
-    background-size: 768px auto;
+    background-image: $top-gradient, url("../img/hero/hero-mobile@2x.jpg");
   }
 }
 
@@ -47,5 +49,5 @@
 .hero__button {
   width: 100%;
   max-width: 300px;
-  margin-bottom: 60px;
+  margin-bottom: 160px;
 }
