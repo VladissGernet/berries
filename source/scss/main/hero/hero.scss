@@ -2,15 +2,15 @@
   min-height: 640px;
   padding-top: 68px;
   background-color: $link-water;
-  background-image: $top-gradient, url("../img/hero/hero-mobile.jpg"), url("../img/hero/hero-mobile-adaptive.jpg");
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-position: top, left bottom, right;
-  background-size: auto, auto, auto;
+  background-image: $top-gradient, url("../img/hero/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top, left -6px bottom -235px;
+  background-size: auto, auto;
   box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: $top-gradient, url("../img/hero/hero-mobile@2x.jpg"), url("../img/hero/hero-mobile-adaptive.jpg");
-    background-size: auto, auto 640px, auto;
+    background-image: $top-gradient, url("../img/hero/hero-mobile@2x.jpg");
+    background-size: auto, 764px 876px;
   }
 }
 
@@ -22,12 +22,22 @@
   line-height: 40px;
   color: $deep-sea;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 46px;
+    line-height: 54px;
+    width: 532px;
+  }
 }
 
 .hero__list {
   list-style-type: none;
   margin: 0 0 53px;
   padding: 0 0 0 28px;
+
+  @media (min-width: $tablet-width) {
+    width: 532px;
+  }
 }
 
 .hero__item {
