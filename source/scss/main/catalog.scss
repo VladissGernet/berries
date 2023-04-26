@@ -1,6 +1,10 @@
 .catalog {
   min-height: 800px;
   margin-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
 }
 
 .catalog__tile {
