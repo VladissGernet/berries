@@ -11,7 +11,7 @@
 }
 
 .hero__title {
-  margin: 0 0 21px;
+  margin: 0 0 32px;
   font-family: $title-font;
   font-weight: 400;
   font-size: 36px;
@@ -23,11 +23,20 @@
 .hero__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 28px;
 }
 
 .hero__item {
-  margin-left: 20px;
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.hero__item:last-child {
+  margin-top: 19px;
+  margin-bottom: 0;
 }
 
 .hero__content {
