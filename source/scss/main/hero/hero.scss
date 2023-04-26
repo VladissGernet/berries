@@ -9,7 +9,8 @@
   box-sizing: border-box;
 
   @media (min-resolution: 2dppx) {
-    background-image: $top-gradient, url("../img/hero/hero-mobile@2x.jpg");
+    background-image: $top-gradient, url("../img/hero/hero-mobile@2x.jpg"), url("../img/hero/hero-mobile-adaptive.jpg");
+    background-size: auto, auto 640px, auto;
   }
 }
 
