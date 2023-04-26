@@ -35,6 +35,8 @@
   display: inline-block;
   margin-top: 8px;
   text-decoration: none;
+  color: $deep-sea;
+  transition: color 0.1s;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 0 0;
@@ -42,20 +44,20 @@
     gap: 8px;
     align-items: start;
   }
+
+  &:hover {
+    color: $lawn-green;
+  }
+
+  &:active {
+    color: $light-deep-sea;
+  }
 }
 
 .main-header__logo-icon {
   @media (min-width: $tablet-width) {
     width: 58px;
     height: 60px;
-  }
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
   }
 }
 
@@ -69,7 +71,6 @@
     font-weight: 700;
     font-size: 42px;
     line-height: 50px;
-    color: $deep-sea;
     max-width: 142px;
     align-self: center;
   }
