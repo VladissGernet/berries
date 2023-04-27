@@ -1,13 +1,12 @@
 .news {
+  margin-bottom: 100px;
   padding-top: 96px;
-  padding-bottom: 72px;
-  background-image: url("../img/news/line-leaf.svg"), url("../img/news/line-leaf.svg");
+  background-image: url("../img/news/line-leaf.svg");
   background-repeat: no-repeat;
-  background-position: top center, bottom center;
+  background-position: top center;
 
   @media (min-width: $tablet-width) {
     padding-top: 115px;
-    padding-bottom: 120px;
     background-size: 296px 42px;
   }
 }
