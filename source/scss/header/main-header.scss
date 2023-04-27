@@ -1,0 +1,282 @@
+.main-header {
+  background-color: $alice-blue;
+  min-height: 68px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 104px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 108px;
+  }
+}
+
+.main-header__container {
+  @media (max-width: $mobile-width) {
+    padding: 0 26px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    padding: 0 19px 20px 26px;
+    display: flex;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 156px 20px;
+    margin-top: 24px;
+  }
+}
+
+.main-header__logo {
+  margin-right: auto;
+  display: inline-block;
+  margin-top: 8px;
+  text-decoration: none;
+  color: $deep-sea;
+  transition: color 0.1s;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+    display: flex;
+    gap: 8px;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+  }
+
+  &:hover {
+    color: $lawn-green;
+  }
+
+  &:active {
+    color: $light-deep-sea;
+  }
+}
+
+//Логотип на главной странице некликабельный. Тех. задание.
+.main-header__logo--index {
+ pointer-events: none;
+}
+
+.main-header__logo-icon {
+  @media (min-width: $tablet-width) {
+    width: 58px;
+    height: 60px;
+    margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.main-header__logo-text {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 142px;
+    align-self: end;
+    margin-top: 14px;
+  }
+}
+
+// Burger
+.main-header__toggle {
+  position: absolute;
+  right: 3px;
+  top: -45px;
+  width: 45px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45px;
+    height: 5px;
+    background-color: $deep-sea;
+    box-shadow: 0 12px 0 0 $deep-sea, 0 25px 0 0 $deep-sea;
+    border-radius: 5px;
+  }
+
+  &:hover::before {
+    background-color: $lawn-green;
+    box-shadow: 0 12px 0 0 $lawn-green, 0 25px 0 0 $lawn-green;
+  }
+
+  &:active::before {
+    background-color: $light-deep-sea;
+    box-shadow: 0 12px 0 0 $light-deep-sea, 0 25px 0 0 $light-deep-sea;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.main-header__navigation {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    max-width: 700px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
+
+// Menu close cross
+.main-header__navigation--opened .main-header__toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    width: 35px;
+    height: 3px;
+    background-color: $deep-sea;
+    box-shadow: none;
+    transform: rotate(45deg);
+    border-radius: 5px;
+  }
+
+  &:hover::before {
+    background-color: $lawn-green;
+  }
+
+  &:active::before {
+    background-color: $light-deep-sea;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 14px;
+    width: 35px;
+    height: 3px;
+    background-color: $deep-sea;
+    box-shadow: none;
+    transform: rotate(-45deg);
+    border-radius: 5px;
+  }
+
+  &:hover::after {
+    background-color: $lawn-green;
+  }
+
+  &:active::after {
+    background-color: $light-deep-sea;
+  }
+}
+
+.main-header__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: $alice-blue;
+
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    left: -26px;
+    top: 4px;
+    width: calc(100% + 52px);
+    flex-direction: column;
+    gap: 9px;
+    z-index: 1;
+    padding-top: 23px;
+    background-image: $top-gradient;
+    min-height: 338px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 6px;
+    align-items: start;
+    margin-top: 18px;
+    margin-left: 46px;
+    max-width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 52px;
+    margin-top: 0;
+    gap: 5px 28px;
+    margin-right: 0;
+    max-width: 700px;
+  }
+}
+
+.main-header__navigation--closed .main-header__list {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.main-header__navigation--opened .main-header__list {
+  @media (max-width: $mobile-width) {
+    display: flex;
+  }
+}
+
+.main-header__navigation--nojs .main-header__list {
+  @media (max-width: $mobile-width) {
+    position: static;
+    display: flex;
+    margin-left: -26px;
+    margin-top: 4px;
+  }
+}
+
+.main-header__navigation--nojs .main-header__toggle {
+  display: none;
+}
+
+.main-header__link {
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: $black;
+  display: inline-block;
+  padding: 10px 0 10px 40px;
+  transition: color 0.1s;
+
+  @media (max-width: $mobile-width) {
+    width: calc(100% - 52px);
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 5px;
+    min-width: 112px;
+    max-width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 17px;
+    padding: 0 0 7px;
+    min-width: 132px;
+    max-width: 170px;
+  }
+
+  &:hover {
+    color: $lawn-green;
+  }
+
+  &:active {
+    color: $light-deep-sea;
+  }
+}

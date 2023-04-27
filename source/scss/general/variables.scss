@@ -1,31 +1,38 @@
 // Viewports
 
 $tablet-width: 768px;
-$desktop-width: 1150px;
+$desktop-width: 1440px;
 $mobile-width: 767px;
 
 // Fonts
 
-$general-font: "Open Sans", "Arial", sans-serif;
+$general-font: "Raleway", "Arial", sans-serif;
+$title-font: "Comfortaa", "Arial", sans-serif;
 
 // Colors
 
-$white: #ffffff;
+// Background
+$white: #fbfcfe;
+$alice-blue: #f1f6fc;
+$edward: #8e9892;
+
+// Accent
+$purple: #6a107a;
+$deep-sea: #0f805d;
+
+// Text colors
 $black: #000000;
-$aubergine: #231f20;
-$charcoal: #444444;
-$downy: #63d1bb;
-$downy2: #62d1ba;
-$puerto-rico: #56c3b2;
-$puerto-rico2: #46c1ae;
-$dark-cyan: #149080;
-$whisper: #e6e6e6;
-$snow: #f9f9f9;
-$gallery: #ececec;
-$white-smoke: #f1f1f1;
-$whisper2: #e5e5e5;
+
+// Related
+$dark-orchid: #b22ec8;
+$lawn-green: #7bdb0a;
+$light-coral: #ff8282;
+$light-deep-sea: rgba(#0f805d, 0.5);
+$link-water: #cdd6df;
 
 // General
+
+$top-gradient: linear-gradient(180deg, rgba(88, 13, 101, 0.25) 0, transparent 7px);
 
 html {
   //Sticky footer

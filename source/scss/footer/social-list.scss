@@ -1,0 +1,39 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px 32px;
+  }
+}
+
+.social-list__link {
+  display: block;
+  width: 32px;
+  height: 32px;
+  color: $deep-sea;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
+  :hover {
+    color: $lawn-green;
+  }
+
+  :active {
+    color: $light-deep-sea;
+  }
+}
+
+.social-list__icon {
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}

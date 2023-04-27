@@ -1,0 +1,144 @@
+.catalog {
+  min-height: 800px;
+  margin-bottom: 63px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 97px;
+  }
+}
+
+.catalog__tile {
+  margin: 0 0 64px;
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $deep-sea;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+    font-size: 48px;
+    line-height: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 93px;
+    font-size: 52px;
+    line-height: 58px;
+  }
+}
+
+.catalog__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 23px;
+
+  @media (min-width: $tablet-width) {
+    width: 580px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: unset;
+    margin: 0;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 24px;
+  }
+}
+
+.catalog__item {
+  width: 264px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px rgba(88, 13, 101, 0.15);
+  transition: box-shadow 0.1s;
+
+  //Ограничение отображения карточек на странице согласно макету.
+  @media (max-width: $mobile-width) {
+    &:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+
+//Состояния взаимодействия с карточкой
+
+.catalog__item:focus-within {
+  box-shadow: 0 12px 4px rgba(88, 13, 101, 0.15);
+}
+
+.catalog__picture-link {
+  transition: all 0.1s;
+}
+
+.catalog__picture-link:hover {
+  opacity: 0.8;
+}
+
+.catalog__picture-link:active {
+  opacity: 0.6;
+}
+
+.catalog__picture-link:hover + .catalog__item-title {
+  color: $lawn-green;
+}
+
+.catalog__picture-link:active + .catalog__item-title {
+  color: $light-deep-sea;
+}
+
+.catalog__image {
+  object-fit: cover;
+  width: 100%;
+}
+
+.catalog__item-title {
+  margin: 28px 20px 26px;
+  font-size: 28px;
+  line-height: 33px;
+  font-weight: 400;
+  color: $deep-sea;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.catalog__item-title:hover {
+  color: $lawn-green;
+}
+
+.catalog__item-title:active {
+  color: $light-deep-sea;
+}
+
+.catalog__info {
+  margin: 0 20px 38px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog__value {
+  text-align: end;
+}
+
+.catalog__description {
+  margin: 0;
+}
+
+.catalog__button {
+  width: 220px;
+  margin: 0 auto 54px;
+  padding-bottom: 14px;
+}
