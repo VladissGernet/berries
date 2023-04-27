@@ -11,6 +11,9 @@
   border-radius: 40px;
   transition: all 0.1s;
   display: block;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
 
   &:hover {
     background-color: $dark-orchid;
