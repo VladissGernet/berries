@@ -1,0 +1,55 @@
+.location {
+  padding-top: 118px;
+  background-image: url("../img/general/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.location__main-text {
+  font-family: $title-font;
+  font-size: 36px;
+  line-height: 40px;
+  color: $deep-sea;
+  text-align: center;
+  margin: 0 0 64px;
+}
+
+.location__address {
+  font-style: normal;
+}
+
+.location__title {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin: 0 0 34px;
+}
+
+.location__content {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+  text-decoration: none;
+  min-height: 32px;
+  margin: 0;
+  padding-left: 32px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.location__content--street {
+  margin-bottom: 11px;
+  background-image: url("../img/location/leaf.svg");
+}
+
+.location__content--phone {
+  margin-bottom: 11px;
+  padding-left: 37px;
+  background-image: url("../img/location/phone.svg");
+}
+
+.location__content--mail {
+  padding-left: 34px;
+  background-image: url("../img/location/mail.svg");
+}
