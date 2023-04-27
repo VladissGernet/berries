@@ -1,8 +1,13 @@
 .location {
+  margin-bottom: 100px;
   padding-top: 118px;
   background-image: url("../img/general/line-leaf.svg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+.location__container {
+  margin-bottom: 26px;
 }
 
 .location__main-text {
@@ -52,4 +57,23 @@
 .location__content--mail {
   padding-left: 34px;
   background-image: url("../img/location/mail.svg");
+}
+
+.location__map-wrapper {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.location__map {
+  width: 100%;
+}
+
+//В случае отключенного JavaScript
+.location__map--nojs {
+  display: none;
+}
+
+.location__map-img {
+  width: 100%;
+  object-fit: cover;
 }
