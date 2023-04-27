@@ -1,9 +1,13 @@
 .form-hero {
   padding-top: 184px;
+  padding-bottom: 74px;
   position: relative;
+  background-image: url("../img/general/line-leaf.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
-//
+//hero background
 .form-hero::before {
   content: "";
   position: absolute;
