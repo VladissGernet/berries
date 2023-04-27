@@ -6,6 +6,11 @@
   align-items: start;
   grid-template-columns: 52px 1fr;
   gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 20px 20px;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .footer__footer-logo--index {
@@ -14,6 +19,12 @@
 
 .footer__footer-logo {
   color: $deep-sea;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-self: start;
+    gap: 9px;
+  }
 
   &:hover {
     color: $lawn-green;
@@ -24,9 +35,31 @@
   }
 }
 
+.footer__logo-icon {
+  @media (min-width: $tablet-width) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.footer__logo-text {
+  margin-top: 15px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
 .footer__list {
   margin-top: 9px;
   max-width: 136px;
+
+  @media (min-width: $tablet-width) {
+    justify-self: center;
+    max-width: 184px;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
 }
 
 .footer__copyright {
@@ -40,11 +73,26 @@
   min-width: 110px;
   grid-column: 2 / 3;
 
+  @media (min-width: $tablet-width) {
+    grid-column: 3 / 4;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 18px;
+    margin-right: 5px;
+  }
+
   &:hover {
     color: $lawn-green;
   }
 
   &:active {
     color: $light-deep-sea;
+  }
+}
+
+.footer__copyright-icon {
+  @media (min-width: $tablet-width) {
+    width: 28px;
+    height: 32px;
   }
 }
