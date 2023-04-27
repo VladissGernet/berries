@@ -11,6 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    align-items: start;
     margin: 0 auto 200px;
     padding: 142px 156px 0;
     max-width: $desktop-width;
