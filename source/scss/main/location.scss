@@ -9,6 +9,16 @@
     padding-top: 116px;
     background-size: 296px 42px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 200px;
+    padding: 142px 156px 0;
+    max-width: $desktop-width;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .location__container {
@@ -16,6 +26,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
+    padding: 24px 0 0;
   }
 }
 
@@ -33,6 +50,13 @@
     max-width: 350px;
     margin: 0 auto 72px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 52px;
+    line-height: 58px;
+    max-width: unset;
+    margin-bottom: 50px;
+  }
 }
 
 .location__address {
@@ -41,6 +65,11 @@
   @media (min-width: $tablet-width) {
     width: 408px;
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 auto;
+    width: 456px;
   }
 }
 
@@ -105,6 +134,11 @@
 .location__map-wrapper {
   border-radius: 40px;
   overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .location__map {
