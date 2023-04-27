@@ -280,3 +280,11 @@
     color: $light-deep-sea;
   }
 }
+
+//В макете только в desktop зеленого цвета. В тех. задании ничего. Предполагаю что должно быть так.
+.main-header__link--selected {
+  @media (min-width: $desktop-width) {
+    color: $deep-sea;
+    pointer-events: none;
+  }
+}
