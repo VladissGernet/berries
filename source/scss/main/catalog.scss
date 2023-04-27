@@ -53,6 +53,7 @@
   border-radius: 40px;
   overflow: hidden;
   box-shadow: 0 4px 4px rgba(88, 13, 101, 0.15);
+  transition: box-shadow 0.1s;
 
   //Ограничение отображения карточек на странице согласно макету.
   @media (max-width: $mobile-width) {
@@ -60,6 +61,32 @@
       display: none;
     }
   }
+}
+
+//Состояния взаимодействия с карточкой
+
+.catalog__item:focus-within {
+  box-shadow: 0 12px 4px rgba(88, 13, 101, 0.15);
+}
+
+.catalog__picture-link {
+  transition: all 0.1s;
+}
+
+.catalog__picture-link:hover {
+  opacity: 0.8;
+}
+
+.catalog__picture-link:active {
+  opacity: 0.6;
+}
+
+.catalog__picture-link:hover + .catalog__item-title {
+  color: $lawn-green;
+}
+
+.catalog__picture-link:active + .catalog__item-title {
+  color: $light-deep-sea;
 }
 
 .catalog__image {
@@ -76,6 +103,15 @@
   text-align: center;
   display: block;
   text-decoration: none;
+  transition: color 0.1s;
+}
+
+.catalog__item-title:hover {
+  color: $lawn-green;
+}
+
+.catalog__item-title:active {
+  color: $light-deep-sea;
 }
 
 .catalog__info {
