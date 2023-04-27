@@ -4,10 +4,19 @@
   background-image: url("../img/general/line-leaf.svg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 116px;
+    background-size: 296px 42px;
+  }
 }
 
 .location__container {
   margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .location__main-text {
@@ -17,10 +26,22 @@
   color: $deep-sea;
   text-align: center;
   margin: 0 0 64px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 48px;
+    line-height: 54px;
+    max-width: 350px;
+    margin: 0 auto 72px;
+  }
 }
 
 .location__address {
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 408px;
+    margin: 0 auto;
+  }
 }
 
 .location__title {
@@ -28,6 +49,13 @@
   line-height: 19px;
   text-align: center;
   margin: 0 0 34px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 23px;
+    text-align: start;
+    margin-bottom: 20px;
+  }
 }
 
 .location__content {
@@ -41,6 +69,12 @@
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 36px;
+  }
 }
 
 .location__content--street {
@@ -52,11 +86,20 @@
   margin-bottom: 11px;
   padding-left: 37px;
   background-image: url("../img/location/phone.svg");
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+    padding-left: 40px;
+  }
 }
 
 .location__content--mail {
   padding-left: 34px;
   background-image: url("../img/location/mail.svg");
+
+  @media (min-width: $tablet-width) {
+    padding-left: 36px;
+  }
 }
 
 .location__map-wrapper {
@@ -66,6 +109,10 @@
 
 .location__map {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 372px;
+  }
 }
 
 //В случае отключенного JavaScript
