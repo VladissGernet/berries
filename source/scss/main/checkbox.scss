@@ -1,4 +1,10 @@
 .checkbox__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.checkbox__list--choice {
   columns: 2;
   column-gap: 20px;
 }
@@ -6,6 +12,11 @@
 .checkbox__item {
   margin-bottom: 32px;
   page-break-inside: avoid;
+}
+
+//Для соответствию дизайну
+.checkbox__list--choice .checkbox__item:last-child {
+  margin-bottom: 80px;
 }
 
 .checkbox__label {
@@ -41,6 +52,7 @@
 
 .checkbox__word {
   cursor: pointer;
+  word-break: break-word;
 }
 
 .checkbox__input[type="checkbox"]:checked ~ .checkbox__check-mark {

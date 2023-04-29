@@ -1,7 +1,8 @@
 .order-form__select {
-  margin: 0;
+  margin: 0 auto 60px;
   padding: 0;
   border: none;
+  max-width: 264px;
 }
 
 .order-form__title {
@@ -10,10 +11,4 @@
   color: $deep-sea;
   margin-bottom: 32px;
   padding: 0;
-}
-
-.order-form__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
 }
