@@ -7,11 +7,20 @@
 .checkbox__list--choice {
   columns: 2;
   column-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    columns: 3;
+    column-gap: 24px;
+  }
 }
 
 .checkbox__item {
   margin-bottom: 32px;
   page-break-inside: avoid;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
 }
 
 //Для соответствию дизайну
@@ -27,6 +36,11 @@
   align-items: center;
   padding-left: 34px;
   min-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .checkbox__mark {
@@ -87,4 +101,18 @@
 
 .checkbox__input:disabled ~ .checkbox__word {
   cursor: not-allowed;
+}
+
+//Непонятный отступ в макете планшетной версии
+.checkbox__item--design-mistake-margin {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    margin-bottom: 88px;
+  }
+}
+
+//По какой-то причине два пункта пропадают в макете на планшетной версии
+.checkbox__item--design-mistake {
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    display: none;
+  }
 }
