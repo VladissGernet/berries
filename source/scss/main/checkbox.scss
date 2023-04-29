@@ -1,0 +1,78 @@
+.checkbox__list {
+  columns: 2;
+  column-gap: 20px;
+}
+
+.checkbox__item {
+  margin-bottom: 32px;
+  page-break-inside: avoid;
+}
+
+.checkbox__label {
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 34px;
+  min-height: 24px;
+}
+
+.checkbox__mark {
+  width: 24px;
+  height: 24px;
+  border: 2px solid $deep-sea;
+  border-radius: 5px;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.checkbox__check-mark {
+  color: $deep-sea;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: -1;
+}
+
+.checkbox__word {
+  cursor: pointer;
+}
+
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__check-mark {
+  display: block;
+}
+
+.checkbox__input:hover + .checkbox__mark {
+  border-color: $lawn-green;
+}
+
+.checkbox__input:hover ~ .checkbox__check-mark {
+  color: $lawn-green;
+}
+
+.checkbox__input:not(:disabled):active + .checkbox__mark {
+  opacity: 0.6;
+}
+
+.checkbox__input:not(:disabled):active ~ .checkbox__check-mark {
+  opacity: 0.6;
+}
+
+.checkbox__input:focus-visible + .checkbox__mark {
+  outline: 2px solid $lawn-green;
+  outline-offset: 3px;
+}
+
+.checkbox__input:disabled + .checkbox__mark {
+  cursor: not-allowed;
+  border-color: $edward;
+}
+
+.checkbox__input:disabled ~ .checkbox__word {
+  cursor: not-allowed;
+}
