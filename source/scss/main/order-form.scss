@@ -168,6 +168,7 @@
   border: 1px solid $deep-sea;
   border-radius: 20px;
   box-sizing: border-box;
+  color: $black;
 }
 
 .order-form__input--address {
@@ -211,6 +212,7 @@
   padding: 16px 12px;
   width: 100%;
   min-height: 124px;
+  color: $black;
 
   @media (min-width: $tablet-width) {
     margin-top: 4px;
@@ -229,4 +231,36 @@
     width: 336px;
     padding: 17px 16px 18px 16px;
   }
+}
+
+//Состояния input
+.order-form__input::placeholder, .order-form__optional::placeholder {
+  color: $edward;
+}
+
+.order-form__input:hover, .order-form__optional:hover {
+  border-color: $lawn-green;
+}
+
+.order-form__input:active, .order-form__optional:active {
+  border-color: $lawn-green;
+}
+
+.order-form__input:focus, .order-form__optional:focus {
+  border-color: $lawn-green;
+  outline: none;
+}
+
+.order-form__input:invalid, .order-form__optional:invalid {
+  border-color: $light-coral;
+}
+
+.order-form__input:placeholder-shown, .order-form__optional:placeholder-shown {
+  border-color: $deep-sea;
+}
+
+.order-form__input:disabled, .order-form__optional:disabled {
+  border-color: $edward;
+  cursor: not-allowed;
+  background-color: transparent;
 }
