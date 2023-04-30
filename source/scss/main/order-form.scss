@@ -10,8 +10,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
     margin-left: 193px;
     margin-right: 260px;
+    width: unset;
   }
 }
 

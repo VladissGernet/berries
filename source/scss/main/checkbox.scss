@@ -24,6 +24,12 @@
     columns: 2;
     column-gap: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 42px;
+  }
 }
 
 .checkbox__item {
