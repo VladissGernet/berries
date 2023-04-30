@@ -25,6 +25,10 @@
 
 .location--form {
   padding-top: 92px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 115px;
+  }
 }
 
 .location__container {

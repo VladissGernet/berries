@@ -1,5 +1,9 @@
 .order-form {
   margin-bottom: 88px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 100px;
+  }
 }
 
 .order-form-container {
@@ -70,7 +74,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin-bottom: 36px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 36px 24px;
@@ -96,6 +100,10 @@
 
 .order-form__field-wrapper:nth-child(5) {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .order-form__field-wrapper--tel {
@@ -154,6 +162,12 @@
   line-height: 16px;
   word-break: break-word;
   margin-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 10px;
+  }
 }
 
 .order-form__optional-container {
@@ -175,10 +189,22 @@
   padding: 16px 12px;
   width: 100%;
   min-height: 124px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 4px;
+    min-height: 144px;
+  }
 }
 
 .order-form__button {
   margin: 0 auto 20px;
   padding: 14px 24px 16px 16px;
   width: 264px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 28px;
+    line-height: 33px;
+    width: 336px;
+    padding: 17px 16px 18px 16px;
+  }
 }
