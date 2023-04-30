@@ -30,7 +30,7 @@
 
 //Для соответствию дизайну
 .checkbox__list--choice .checkbox__item:last-child {
-  margin-bottom: 80px;
+  margin-bottom: 88px;
 }
 
 .checkbox__label {
@@ -106,18 +106,4 @@
 
 .checkbox__input:disabled ~ .checkbox__word {
   cursor: not-allowed;
-}
-
-//Непонятный отступ в макете планшетной версии
-.checkbox__item--design-mistake-margin {
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
-    margin-bottom: 88px;
-  }
-}
-
-//По какой-то причине два пункта пропадают в макете на планшетной версии
-.checkbox__item--design-mistake {
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
-    display: none;
-  }
 }
