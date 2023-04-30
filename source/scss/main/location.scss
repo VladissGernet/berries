@@ -48,7 +48,8 @@
   line-height: 40px;
   color: $deep-sea;
   text-align: center;
-  margin: 0 0 64px;
+  margin: 0 auto 64px;
+  max-width: 264px;
 
   @media (min-width: $tablet-width) {
     font-size: 48px;
@@ -67,6 +68,8 @@
 
 .location__address {
   font-style: normal;
+  width: 264px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 408px;
