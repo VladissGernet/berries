@@ -261,6 +261,37 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset class="order-form__select radio-select">
+        <legend class="order-form__title">
+          Способ доставки
+        </legend>
+        <ul class="radio-select__list">
+          <li class="radio-select__item">
+            <label class="radio-select__label">
+              <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="delivery" checked>
+              <span class="radio-select__mark"></span>
+              <span class="radio-select__pickup-type">
+                Доставка
+              </span>
+              <span class="radio-select__description">
+                (по СПБ в пределах КАД)
+              </span>
+            </label>
+          </li>
+          <li class="radio-select__item">
+            <label class="radio-select__label">
+              <input class="visually-hidden radio-select__input" type="radio" name="form-radio" value="pickup">
+              <span class="radio-select__mark"></span>
+              <span class="radio-select__pickup-type">
+                Самовывоз
+              </span>
+              <span class="radio-select__description">
+                (Набережная&nbsp;Обводного канала, 101)
+              </span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
     </div>
   </form>
 </main>
