@@ -34,3 +34,9 @@
     margin-bottom: 48px;
   }
 }
+
+.order-form__title--delivery {
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+  }
+}

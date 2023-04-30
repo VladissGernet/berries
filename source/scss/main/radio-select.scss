@@ -2,10 +2,20 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 6px;
+  }
 }
 
 .radio-select__item {
   margin-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 66px;
+  }
 }
 
 .radio-select__label {
@@ -17,6 +27,11 @@
   min-height: 21px;
   padding-left: 34px;
   max-width: 190px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 .radio-select__mark {
@@ -30,6 +45,11 @@
   transform: translateY(-50%);
   border-radius: 50%;
   cursor: pointer;
+
+  //Для лучшего вида при переполнении
+  @media (min-width: $tablet-width) {
+    top: 32px;
+  }
 }
 
 .radio-select__input[type="radio"] ~ span {
