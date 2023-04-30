@@ -105,6 +105,11 @@
   opacity: 0.6;
 }
 
+.radio-select__input:focus + .radio-select__mark {
+  outline: 2px solid $lawn-green;
+  outline-offset: 4px;
+}
+
 .radio-select__input[type="radio"]:disabled ~ span {
   border-color: $edward;
   cursor: not-allowed;
