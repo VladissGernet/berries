@@ -126,26 +126,34 @@
 .location__content--street {
   margin-bottom: 11px;
   background-image: url("../img/location/location-leaf.svg");
-}
-
-.location__content--phone {
-  margin-bottom: 11px;
-  padding-left: 37px;
-  background-image: url("../img/location/phone.svg");
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 14px;
-    padding-left: 40px;
+    margin-bottom: 12px;
   }
 }
 
-.location__content--mail {
+.location__content--link {
+  position: relative;
+  margin-bottom: 12px;
+  padding-left: 38px;
+}
+
+.location__content--link:hover {
+  color: $lawn-green;
+}
+
+.location__content--link:active {
+  color: $light-deep-sea;
+}
+
+.location__content--link:nth-of-type(2) {
   padding-left: 34px;
-  background-image: url("../img/location/mail.svg");
+}
 
-  @media (min-width: $tablet-width) {
-    padding-left: 36px;
-  }
+.location__icon {
+  position: absolute;
+  top: 0;
+  left: -2px;
 }
 
 .location__map-wrapper {
