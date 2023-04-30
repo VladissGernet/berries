@@ -45,3 +45,56 @@
     margin-bottom: 44px;
   }
 }
+
+.order-form__contacts {
+  margin: 0 auto 29px;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.order-form__title--contacts {
+  padding-top: 4px;
+}
+
+.order-form__field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.order-form__label {
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 10px;
+  word-break: break-word;
+}
+
+.order-form__required {
+  color: $light-coral;
+}
+
+.order-form__input {
+  font-family: $general-font;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 16px 12px;
+  border: 1px solid $deep-sea;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.order-form__input--address {
+  min-height: 90px;
+  vertical-align: top;
+  resize: none;
+}
+
+.order-form__label-optional {
+  font-size: 14px;
+  line-height: 16px;
+  word-break: break-word;
+  margin-left: 20px;
+}

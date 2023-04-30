@@ -26,6 +26,10 @@
   }
 }
 
+.radio-select__item:last-child {
+  margin: 0;
+}
+
 .radio-select__label {
   font-size: 16px;
   line-height: 19px;

@@ -292,8 +292,8 @@
           </li>
         </ul>
       </fieldset>
-      <fieldset class="order-form__select">
-        <legend class="order-form__title">
+      <fieldset class="order-form__contacts">
+        <legend class="order-form__title order-form__title--contacts">
           Ваши контакты
         </legend>
         <div class="order-form__field-wrapper">
@@ -310,11 +310,11 @@
         </div>
         <div class="order-form__field-wrapper">
           <label class="order-form__label" for="order-form-address">Адрес:<span class="order-form__required">*</span></label>
-          <input class="order-form__input" id="order-form-address" name="order-form-address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
+          <textarea class="order-form__input order-form__input--address" id="order-form-address" name="order-form-address" placeholder="Адрес в Санкт-Петербурге" required></textarea>
         </div>
-        <div class="order-form__optional-container container">
-          <label class="order-form__title" for="optional">Доп</label>
-          <textarea class="order-form__optional" id="optional" name="optional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="order-form__optional-container">
+          <label class="order-form__label-optional" for="optional">Пожелания к заказу</label>
+          <textarea class="order-form__optional" id="optional" name="optional" placeholder="Чем мы можем вам помочь?"></textarea>
         </div>
       </fieldset>
       <button class="order-form__button button" type="submit">
