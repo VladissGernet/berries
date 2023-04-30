@@ -103,9 +103,10 @@
 }
 
 .footer__copyright-icon {
+  flex-shrink: 0;
+
   @media (min-width: $tablet-width) {
     width: 28px;
     height: 32px;
-    flex-shrink: 0;
   }
 }
