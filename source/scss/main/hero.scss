@@ -57,6 +57,7 @@
   line-height: 40px;
   color: $deep-sea;
   text-align: center;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 48px;

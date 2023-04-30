@@ -58,6 +58,7 @@
   text-align: center;
   margin: 0 auto 64px;
   max-width: 264px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 48px;

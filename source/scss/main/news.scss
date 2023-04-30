@@ -43,6 +43,7 @@
   text-align: center;
   color: $deep-sea;
   margin: 0 0 64px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 48px;
@@ -99,6 +100,7 @@
   text-align: center;
   max-width: 206px;
   margin: 0 auto 20px;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     min-height: 100px;
@@ -119,6 +121,7 @@
   line-height: 16px;
   margin: 0 0 16px;
   flex-grow: 1;
+  word-break: break-word;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
