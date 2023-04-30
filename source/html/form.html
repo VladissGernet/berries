@@ -292,6 +292,34 @@
           </li>
         </ul>
       </fieldset>
+      <fieldset class="order-form__select">
+        <legend class="order-form__title">
+          Ваши контакты
+        </legend>
+        <div class="order-form__field-wrapper">
+          <label class="order-form__label" for="order-form-name">Имя:<span class="order-form__required">*</span></label>
+          <input class="order-form__input" id="order-form-name" name="order-form-name" type="text" placeholder="Как к вам обращаться?" required>
+        </div>
+        <div class="order-form__field-wrapper">
+          <label class="order-form__label" for="order-form-tel">Телефон:<span class="order-form__required">*</span></label>
+          <input class="order-form__input" id="order-form-tel" name="order-form-tel" type=tel placeholder="+7 ххх ххх хх хх" required>
+        </div>
+        <div class="order-form__field-wrapper">
+          <label class="order-form__label" for="order-form-mail">Email:<span class="order-form__required">*</span></label>
+          <input class="order-form__input" id="order-form-mail" name="order-form-mail" type="email" placeholder="Ваш email" required>
+        </div>
+        <div class="order-form__field-wrapper">
+          <label class="order-form__label" for="order-form-address">Адрес:<span class="order-form__required">*</span></label>
+          <input class="order-form__input" id="order-form-address" name="order-form-address" type="text" placeholder="Адрес в Санкт-Петербурге" required>
+        </div>
+        <div class="order-form__optional-container container">
+          <label class="order-form__title" for="optional">Доп</label>
+          <textarea class="order-form__optional" id="optional" name="optional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </div>
+      </fieldset>
+      <button class="order-form__button button" type="submit">
+        Заказать
+      </button>
     </div>
   </form>
 </main>
