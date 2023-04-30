@@ -299,22 +299,37 @@
         <div class="order-form__field-wrapper">
           <label class="order-form__label" for="order-form-name">Имя:<span class="order-form__required">*</span></label>
           <input class="order-form__input" id="order-form-name" name="order-form-name" type="text" placeholder="Как к вам обращаться?" required>
+          <p class="order-form__error-message">
+            Проверьте данные
+          </p>
         </div>
         <div class="order-form__field-wrapper order-form__field-wrapper--tel">
           <label class="order-form__label" for="order-form-tel">Телефон:<span class="order-form__required">*</span></label>
           <input class="order-form__input" id="order-form-tel" name="order-form-tel" type=tel placeholder="+7 ххх ххх хх хх" required>
+          <p class="order-form__error-message">
+            Проверьте данные
+          </p>
         </div>
         <div class="order-form__field-wrapper order-form__field-wrapper--mail">
           <label class="order-form__label" for="order-form-mail">Email:<span class="order-form__required">*</span></label>
           <input class="order-form__input" id="order-form-mail" name="order-form-mail" type="email" placeholder="Ваш email" required>
+          <p class="order-form__error-message">
+            Проверьте данные
+          </p>
         </div>
         <div class="order-form__field-wrapper order-form__field-wrapper--address">
           <label class="order-form__label" for="order-form-address">Адрес:<span class="order-form__required">*</span></label>
           <textarea class="order-form__input order-form__input--address" id="order-form-address" name="order-form-address" rows="1" placeholder="Адрес в Санкт-Петербурге" required></textarea>
+          <p class="order-form__error-message">
+            Проверьте данные
+          </p>
         </div>
         <div class="order-form__optional-container">
           <label class="order-form__label-optional" for="optional">Пожелания к заказу</label>
           <textarea class="order-form__optional" id="optional" name="optional" placeholder="Чем мы можем вам помочь?"></textarea>
+          <p class="order-form__error-message">
+            Проверьте данные
+          </p>
         </div>
       </fieldset>
       <button class="order-form__button button" type="submit">
