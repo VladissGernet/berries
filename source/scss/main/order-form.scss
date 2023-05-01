@@ -48,6 +48,10 @@
 
 .order-form__select--delivery {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .order-form__title {
