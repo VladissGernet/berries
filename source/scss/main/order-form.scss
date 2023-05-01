@@ -318,20 +318,12 @@
   display: block;
 }
 
-.order-form__optional:invalid ~ .order-form__error-message {
-  display: block;
-}
-
 .order-form__input:placeholder-shown,
 .order-form__optional:placeholder-shown {
   border-color: $deep-sea;
 }
 
 .order-form__input:placeholder-shown ~ .order-form__error-message {
-  display: none;
-}
-
-.order-form__optional:placeholder-shown ~ .order-form__error-message--optional {
   display: none;
 }
 
