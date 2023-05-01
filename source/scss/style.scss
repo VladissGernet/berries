@@ -1,16 +1,19 @@
-@import "general/variables.scss";
-@import "general/visually-hidden.scss";
-@import "general/fonts.scss";
-@import "general/container.scss";
-@import "general/button.scss";
-@import "header/main-header.scss";
-@import "main/hero.scss";
-@import "main/catalog.scss";
-@import "main/news.scss";
-@import "main/location.scss";
-@import "footer/social-list.scss";
-@import "footer/footer.scss";
-@import "main/form-hero.scss";
-@import "main/order-form.scss";
-@import "main/checkbox.scss";
-@import "main/radio-select.scss";
+/* GLOBAL */
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/fonts.scss";
+@import "global/container.scss";
+@import "global/button.scss";
+
+/* BLOCKS */
+@import "blocks/main-header";
+@import "blocks/hero";
+@import "blocks/catalog";
+@import "blocks/news";
+@import "blocks/location";
+@import "blocks/social-list";
+@import "blocks/footer";
+@import "blocks/form-hero";
+@import "blocks/order-form";
+@import "blocks/checkbox";
+@import "blocks/radio-select";
