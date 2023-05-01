@@ -35,7 +35,7 @@
   }
 }
 
-@-moz-document url-prefix() {
+@-moz-document url-prefix("") {
   .location--form {
     padding-top: 94px;
 
