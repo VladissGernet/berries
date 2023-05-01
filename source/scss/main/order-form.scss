@@ -1,6 +1,10 @@
 .order-form {
   margin-bottom: 91px;
 
+  @-moz-document url-prefix("") {
+    margin-bottom: 88px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 100px;
   }
