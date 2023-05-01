@@ -114,6 +114,17 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .order-form__contacts .order-form__title {
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      margin: 0 auto 40px;
+      display: block;
+      width: 360px;
+    }
+  }
+}
+
 .order-form__field-wrapper {
   display: flex;
   flex-direction: column;
