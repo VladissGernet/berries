@@ -323,6 +323,14 @@
   border-color: $deep-sea;
 }
 
+.order-form__input:placeholder-shown ~ .order-form__error-message {
+  display: none;
+}
+
+.order-form__optional:placeholder-shown ~ .order-form__error-message--optional {
+  display: none;
+}
+
 .order-form__input:disabled,
 .order-form__optional:disabled {
   border-color: $edward;
