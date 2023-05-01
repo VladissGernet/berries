@@ -13,7 +13,7 @@
 }
 
 .order-form__select {
-  margin: 0 auto 29px;
+  margin: 0 auto 30px;
   padding: 0;
   border: none;
   width: 264px;
@@ -31,22 +31,23 @@
   }
 }
 
-.order-form__select:nth-child(3) {
-  margin-bottom: 34px;
+.order-form__select--berries {
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
+    margin-bottom: 30px;
   }
 }
 
-.order-form__select:nth-child(2) {
-  @media (min-width: $desktop-width) {
-    margin-bottom: 24px;
+//Исправление отклонения от макета в Mozilla Firefox
+@-moz-document url-prefix() {
+  .order-form__select--berries {
+    margin-bottom: 32px;
   }
+}
+
+.order-form__select--delivery {
+  margin-bottom: 34px;
 }
 
 .order-form__title {
