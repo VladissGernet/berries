@@ -197,4 +197,8 @@
 .location__map-img {
   width: 100%;
   object-fit: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 376px;
+  }
 }
