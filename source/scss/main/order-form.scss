@@ -284,6 +284,10 @@
   padding: 14px 24px 16px 16px;
   width: 264px;
 
+  @-moz-document url-prefix() {
+    padding: 16px 24px 18px 16px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
