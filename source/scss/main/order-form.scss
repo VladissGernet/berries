@@ -104,6 +104,14 @@
   }
 }
 
+@-moz-document url-prefix() {
+  .order-form__contacts {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 36px;
+    }
+  }
+}
+
 .order-form__contacts .order-form__title {
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -118,7 +126,7 @@
   .order-form__contacts .order-form__title {
     @media (min-width: $tablet-width) {
       text-align: center;
-      margin: 0 auto 40px;
+      margin: 0 auto 44px;
       display: block;
       width: 360px;
     }

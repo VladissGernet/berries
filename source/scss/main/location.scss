@@ -38,6 +38,10 @@
 @-moz-document url-prefix() {
   .location--form {
     padding-top: 94px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 115px;
+    }
   }
 }
 
