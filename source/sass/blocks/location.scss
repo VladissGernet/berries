@@ -1,7 +1,7 @@
 .location {
   margin-bottom: 60px;
   padding-top: 118px;
-  background-image: url("../img/general/line-leaf.svg");
+  background-image: url("../../img/general/line-leaf.svg");
   background-repeat: no-repeat;
   background-position: top center;
 
@@ -140,7 +140,7 @@
 
 .location__content--street {
   margin-bottom: 11px;
-  background-image: url("../img/location/location-leaf.svg");
+  background-image: url("../../img/location/location-leaf.svg");
 
   @media (min-width: $tablet-width) {
     margin-bottom: 12px;
