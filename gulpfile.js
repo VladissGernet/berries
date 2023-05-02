@@ -62,7 +62,7 @@ export function optimizeImages () {
 }
 
 export function createWebp () {
-  return gulp.src('source/img/**/*.{png,jpg}', '!source/img/favicons/*.png')
+  return gulp.src('source/img/**/*.{png,jpg}')
     .pipe(squoosh({
       webp: {}
     }))
@@ -86,7 +86,7 @@ export function copyAssets () {
   return gulp.src([
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
-    'source/manifest.json'
+    'source/*.webmanifest',
   ], {
     base: 'source'
   })
