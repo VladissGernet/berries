@@ -105,7 +105,7 @@
   opacity: 0.6;
 }
 
-.radio-select__input:focus + .radio-select__mark {
+.radio-select__input:focus-visible + .radio-select__mark {
   outline: 2px solid $lawn-green;
   outline-offset: 4px;
 }
