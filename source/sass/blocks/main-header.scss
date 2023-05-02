@@ -217,6 +217,12 @@
   }
 }
 
+.main-header__item:last-child {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 70px;
+  }
+}
+
 .main-header__navigation--closed .main-header__list {
   @media (max-width: $mobile-width) {
     display: none;
